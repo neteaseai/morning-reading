@@ -1,0 +1,31 @@
+{
+  "name": "morning-reading",
+  "version": "1.0.0",
+  "description": "share your knowledge",
+  "scripts": {
+    "build": "node ./build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && git add -A"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neteaseai/morning-reading.git"
+  },
+  "keywords": [
+    "fed",
+    "share"
+  ],
+  "author": "netease-ai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neteaseai/morning-reading/issues"
+  },
+  "homepage": "https://github.com/neteaseai/morning-reading#readme",
+  "devDependencies": {
+    "fs-extra": "^8.0.1",
+    "husky": "^2.3.0"
+  }
+}
